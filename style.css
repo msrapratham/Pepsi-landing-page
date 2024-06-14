@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
+  background-color: #070b29;
+  color: aliceblue;
+  box-sizing: border-box;
+}
+
+/* nav bar */
+
+.main,
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.nav-main {
+  width: 100%;
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  margin-right: 5rem;
+
+  li {
+    padding-right: 4rem;
+  }
+  li:nth-child(5) {
+    padding-right: 0rem;
+  }
+
+  li a {
+    text-decoration: none;
+    font-size: 0.75rem;
+    transition: all 106ms ease-in-out;
+  }
+}
+
+.img-nav {
+  width: 7rem;
+  margin: 0 auto 0 2.5rem;
+}
+
+.link-nav a:focus {
+  border: 1px solid rgb(52, 72, 182);
+  color: rgb(52, 72, 182);
+  padding: 0.7rem 1.3rem;
+  border-radius: 20%/50%;
+}
+
+.link-nav a:hover {
+  opacity: 0.8;
+}
+
+/* main content */
+
+.main-content {
+  display: flex;
+}
+.left-content {
+  width: 40%;
+  padding: 4rem 0 0 4.5rem;
+  /* border: 1px solid antiquewhite; */
+  h1 {
+    margin-bottom: 1.8rem;
+    font-weight: 600;
+    font-size: 2rem;
+  }
+  p {
+    font-size: 0.75rem;
+  }
+
+  .select-size {
+    margin-top: 1.8rem;
+
+    .size {
+      display: flex;
+      margin-top: 1.8rem;
+
+      a {
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        margin-right: 1rem;
+
+        & > * {
+          text-align: center;
+        }
+
+        span {
+          font-size: 0.75rem;
+          color: #192f64;
+          margin-bottom: 1.8rem;
+
+          &:hover {
+            color: #0b24b9;
+          }
+        }
+
+        i {
+          font-size: 1.5rem;
+          color: #192f64;
+
+          &:hover {
+            color: #0b24b9;
+          }
+
+          /* span:has(>i:hover){
+          color: #0b24b9;
+        } */
+        }
+      }
+    }
+  }
+}
+
+.right-content {
+  width: 60%;
+  display: grid;
+  place-items: center;
+  gap: 2rem;
+  img {
+    padding-top: 4rem;
+  }
+  .btn {
+    border: 1px solid rgb(52, 72, 182);
+    background-color: rgb(52, 72, 182);
+    padding: 0.5rem 1.3rem;
+    border-radius: 2rem;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+.n-facts{
+display: flex;
+flex-direction: column;
+
+span{
+  margin-bottom: 1.8rem;
+}
+}
+
+/* .fact-box{
+  display: flex;
+  background-color: #171b2f;
+  border-radius: 0.5rem;
+  width: 53%;
+
+.detail{
+
+  p{
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
+    padding: 0.7rem 1rem;
+    text-align: center;
+  }
+}
+
+.detail:nth-child(2){
+  border-left: 0.5px solid rgb(121, 121, 121) ;
+  border-right: 0.5px solid rgb(121, 121, 121) ;
+}
+} */
